@@ -45,7 +45,7 @@ body {
   height: 100%;
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: 10% 1fr 10%;
+  grid-template-rows: minmax(6rem, 15%) 1fr minmax(3rem, 10%);
   grid-template-areas:
     "header"
     "results"
