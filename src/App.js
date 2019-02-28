@@ -4,9 +4,15 @@ import ResultViewer from "./components/ResultViewer";
 import Footer from "./components/Footer";
 import styles from "./App.module.scss";
 
+const GBOOKS_API_KEY = `${process.env.REACT_APP_GBOOKS_API_KEY}`;
+
 class App extends Component {
   state = {
     books: []
+  };
+
+  fetchVolumes = () => {
+    fetch();
   };
 
   render() {
