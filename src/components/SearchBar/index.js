@@ -7,7 +7,7 @@ const SearchBar = () => {
       <input
         className={styles.textInput}
         type="text"
-        placeholder="Search by book title or ISBN "
+        placeholder="Search by book title, author, or ISBN... "
       />
       <input className={styles.submitBtn} type="submit" value="Search" />
     </form>
