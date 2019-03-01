@@ -40,9 +40,6 @@ class App extends Component {
 
   render() {
     const { volumes } = this.state;
-
-    console.log(`App.js`, this.state.volumes);
-
     return (
       <div className={styles.App}>
         <Header
