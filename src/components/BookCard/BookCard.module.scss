@@ -9,19 +9,22 @@
   box-shadow: 3px 3px 5px #444;
 
   .thumbnail {
-    // display: block;
-    // margin: 0.5rem auto;
+    height: 40%;
+    max-height: 40%;
     margin: 0.5rem auto;
     box-shadow: 3px 3px 5px #444;
+  }
+
+  .missingThumbnail {
+    min-height: 40%;
+    max-height: 40%;
+    margin: 0.5rem auto;
+    font-weight: bold;
   }
 
   .title {
     text-align: center;
     font-size: 1.25rem;
-  }
-
-  div {
-    margin: 0.25rem 0;
   }
 
   .subtitle {
