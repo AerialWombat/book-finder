@@ -1,18 +1,22 @@
 .container {
   margin: 1rem;
   padding: 1rem;
-  border-radius: 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #eee;
-  box-shadow: 3px 3px 5px #444;
+  background-color: #fff;
+  box-shadow: 1px 1px 3px #888;
+  transition: 0.25s all ease;
+
+  &:hover {
+    transform: scale(1.05);
+  }
 
   .thumbnail {
     height: 40%;
     max-height: 40%;
     margin: 0.5rem auto;
-    box-shadow: 3px 3px 5px #444;
+    box-shadow: 1px 1px 3px #888;
   }
 
   .missingThumbnail {
@@ -35,5 +39,16 @@
 
   p {
     text-align: center;
+  }
+
+  a {
+    margin: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    // font-weight: bold;
+    background-color: #fdb42d;
+
+    &:hover {
+      background-color: #ffc559;
+    }
   }
 }

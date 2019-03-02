@@ -12,13 +12,15 @@
 }
 
 .submitBtn {
+  margin-left: 1rem;
   min-width: 72px;
   min-height: 36px;
-  background-color: orange;
+  background-color: #fdb42d;
   border: none;
   cursor: pointer;
-}
+  transition: 0.25s all ease;
 
-.submitBtn:hover {
-  background-color: lightcoral;
+  &:hover {
+    background-color: #ffc559;
+  }
 }

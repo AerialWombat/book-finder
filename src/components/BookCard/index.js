@@ -34,15 +34,14 @@ const BookCard = ({ volumeInfo }) => {
             : "Missing publisher data"}
         </p>
       </div>
-      <div className={styles.subtitle}>
-        <a
-          target="_blank"
-          href={volumeInfo.canonicalVolumeLink}
-          rel="noopener noreferrer"
-        >
-          Learn More...
-        </a>
-      </div>
+
+      <a
+        target="_blank"
+        href={volumeInfo.canonicalVolumeLink}
+        rel="noopener noreferrer"
+      >
+        Learn More...
+      </a>
     </li>
   );
 };

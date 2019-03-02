@@ -9,7 +9,7 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
   line-height: 1.4;
 }
 
@@ -54,12 +54,13 @@ body {
 }
 
 header {
-  background-color: lightblue;
+  background-color: #ddd;
   grid-area: header;
 }
 
 main {
-  background-color: lightseagreen;
+  height: 100%;
+  background-color: #ddd;
   grid-area: results;
 }
 
