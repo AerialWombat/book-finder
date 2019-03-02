@@ -19,6 +19,11 @@ class App extends Component {
 
   // Makes a GET request to Google Books API with the search query and then stores it in state
   fetchVolumes = event => {
+    // Checks for blank query
+    if (this.state.searchQuery == null) {
+      event.preventDefault();
+      return;
+    }
     this.setState({ isFetching: true });
     fetch(
       `https://www.googleapis.com/books/v1/volumes?q=${
@@ -28,13 +33,15 @@ class App extends Component {
         method: "GET",
         mode: "cors"
       }
-    ).then(res =>
-      res.json().then(data =>
-        this.setState({
-          volumes: data.items
-        })
+    )
+      .then(res =>
+        res.json().then(data =>
+          this.setState({
+            volumes: data.items
+          })
+        )
       )
-    );
+      .catch(err => console.log(err));
     event.preventDefault();
   };
 
