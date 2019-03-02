@@ -45,7 +45,8 @@ body {
   height: 100%;
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: minmax(6rem, 15%) 1fr minmax(3rem, 10%);
+  // grid-template-rows: minmax(6rem, 15%) 1fr minmax(3rem, 10%);
+  grid-template-rows: minmax(6rem, 15%) 1fr 5%;
   grid-template-areas:
     "header"
     "results"
@@ -60,6 +61,9 @@ header {
 main {
   background-color: lightseagreen;
   grid-area: results;
+  // display: grid;
+  // align-items: center;
+  // grid-template-columns: repeat(auto-fit, minmax(300px 1fr));
 }
 
 footer {
