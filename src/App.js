@@ -70,11 +70,7 @@ class App extends Component {
         </main>
       );
     } else {
-      content = (
-        <main>
-          <ResultViewer volumes={volumes} />
-        </main>
-      );
+      content = <ResultViewer volumes={volumes} />;
     }
     return content;
   };
